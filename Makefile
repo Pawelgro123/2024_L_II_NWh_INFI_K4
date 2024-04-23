@@ -4,8 +4,11 @@ deps:
 lint:
 	flake8 hello_world test
 run:
-	phyton main.py
+	python main.py
+env:
+    source .venv/Scripts/activate 
 .PHONY: test
 test:
 	PYTHONPATH=. py.test --verbose -s
+
 	
