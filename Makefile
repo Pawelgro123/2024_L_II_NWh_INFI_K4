@@ -6,9 +6,7 @@ lint:
 run:
 	python main.py
 env:
-    source .venv/Scripts/activate 
+	source .venv/Scripts/activate 
 .PHONY: test
 test:
 	PYTHONPATH=. py.test --verbose -s
-
-	
