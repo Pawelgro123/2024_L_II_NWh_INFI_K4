@@ -11,5 +11,5 @@ jobs:
       - run: make test       
 workflows: 
     basic-Pawel: 
-    jobs:
-        - build-and-test
+        jobs:
+            - build-and-test
